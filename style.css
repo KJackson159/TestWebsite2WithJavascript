@@ -1,0 +1,40 @@
+/* CSS file */
+
+body {
+  border: 2px solid pink;
+  outline: red solid 20px;
+  margin: 20px;
+  padding: 5px;
+  /*text-align: center;*/
+  background-color: #ffefff;
+}
+h1 {
+  outline: 10px solid pink;
+  outline-style: groove;
+  font-size: 40px;
+  text-align: center;
+  color: magenta;
+  background-color: white;
+}
+p {
+  font-size: 30px;
+  color: purple;
+}
+/*p:nth-last-of-type(1) {
+  background: white;
+  outline: 10px solid pink;
+  outline-style: double;
+}*/
+.bulletpts {
+  font-size: 20px;
+  /*text-align: center;*/
+  color: darkred;
+}
+/*#link {
+  font-size: 18px;
+  border: 2px solid magenta;
+}
+a:active {
+  color: green;
+  background-color: yellow;
+}*/
