@@ -35,12 +35,6 @@
     if (el) el.textContent = text;
     else console.log(text);
   }
-  //Run the init function on page load and expose some functions to the global scope for testing
-  window.myFirstJS = {
-    init,
-    showMessage,
-    //add: (a, b) => a + b,
-  };
 
   document.addEventListener("DOMContentLoaded", init);
 })();
