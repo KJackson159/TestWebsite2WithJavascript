@@ -1,8 +1,6 @@
 "use strict";
-
+//Make sure there is no bad syntax (e.g., missing brackets, undeclared variables) in this file
 (function () {
-  // Simple app scaffold: cache selectors, state, init, and small helpers
-
   const selectors = {
     message: "#message",
     button: "#myButton",
@@ -12,11 +10,10 @@
   let count = 0;
 
   function init() {
-    // safe startup after DOM is ready
     const btn = document.querySelector(selectors.button);
     if (btn) btn.addEventListener("click", onButtonClick);
 
-    // initial UI
+    //initial UI
     showMessage("Ready.");
     updateCounter();
   }
@@ -24,6 +21,7 @@
   function onButtonClick() {
     count += 1;
     updateCounter();
+    //New UI message after every click
     showMessage(`Button clicked ${count} time${count === 1 ? "" : "s"}.`);
   }
 
@@ -37,12 +35,11 @@
     if (el) el.textContent = text;
     else console.log(text);
   }
-
-  // small utility exported for debugging/testing
+  //Run the init function on page load and expose some functions to the global scope for testing
   window.myFirstJS = {
     init,
     showMessage,
-    add: (a, b) => a + b,
+    //add: (a, b) => a + b,
   };
 
   document.addEventListener("DOMContentLoaded", init);
